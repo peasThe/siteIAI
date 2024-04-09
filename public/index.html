@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <div class="menu">
+      <div class="items-left">
+        <span class="menu-item" id="home" onclick="scrollToPosition(0)">Home</span>
+        <span class="menu-item" id="about" onclick="scrollToPosition(1)">About</span>
+        <span class="menu-item" id="faq" onclick="scrollToPosition(4)">FAQ</span>
+      </div>
+      <div class="items-right">
+        <a href="login.html"> <span class="menu-item" id="login">Log in</span> </a>
+        <a href="login.html"> <span class="menu-item" id="signup">Sign up</span> </a>
+      </div>
+    </div>
+    <a href="login.html" id="toAppButton"> Get started </a>
+
+    
+    <main>
+        <div class="screen" id="screen1">
+            <div id="logo">iai</div>
+            <div id="motto">Services for all</div>
+        </div>
+        <div class="screen" id="screen2">
+          <div id="text1">
+            Struggling to find <span id="gradient-bg"> reliable services </span> for your needs?
+          </div>
+          <div id="text2">
+            End the search now. 
+          </div>
+          <div id="text3">
+            From dog walking to plumbing, we've got you covered.
+          </div>
+          
+          <div class="scroller">
+            <div class="animation">
+            <div><img class="first" id="img1" src="plumber-clipart-xl.png"/> </div>
+            <div><img id="img2" src="babysitter.jpg"/> </div>
+            <div><img id="img3" src="garnder.jpg"/></div>
+            <div><img id="img4" src="electrician.png"/></div>
+            <div><img id="img5" src="dogwalker.png"/> </div>
+              
+            <div><img class="first" src="plumber-clipart-xl.png"/> </div>
+            <div><img id="img2" src="babysitter.jpg"/> </div>
+            <div><img id="img3" src="garnder.jpg"/></div>
+            <div><img id="img4" src="electrician.png"/></div>
+            <div><img id="img5" src="dogwalker.png"/> </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="screen" id="screen3">
+            <div class="info-tile" id="info-title">We make finding the right person for the job easier than ever for you</div>
+
+            <div class="info-tile tile-type-1" id="tile-1">
+              <div class="tile-title"> Effortless Solutions for Your Every Need </div>
+              <div class="tile-content"> Explore a diverse range of trusted services, spanning from pet care and household maintenance to technical assistance and creative expertise.  </div>
+            </div>
+            <div class="info-tile tile-type-2" id="tile-2">
+              <div class="tile-img" id="tile-img-1"><img src="booking.png"/></div>
+              <div class="tile-title"> Effortless Booking </div>
+              <div class="tile-content"> Book quality services effortlessly with our user-friendly platform. Skip the search and trust our AI matchmaking and chatbot to connect you with reliable providers. </div>
+            </div>
+            <div class="info-tile tile-type-1" id="tile-3">
+              <div class="tile-title"> Confidence Through AI Security</div>
+              <div class="tile-content"> Rely on our AI-driven image recognition to authenticate service providers and evaluate their work. With safety at the forefront, rest assured in our platform's commitment to reliability and peace of mind for all users. </div>
+            </div>
+            <div class="info-tile tile-type-2" id="tile-4">
+              <div class="tile-img" id="tile-img-2"><img src="teamworkimg.png"/></div>
+              <div class="tile-title"> Community-Driven Excellence </div>
+              <div class="tile-content">Join our community focused on trust, reliability, and excellence. Experience transparent interactions and elevate your service standards with us.</div>
+            </div>
+        </div>
+        <div class="screen" id="screen4">
+            <div class="faq-title">FAQ</div>
+
+            <div class="qa-container">
+            
+            <div class="faq-top-border b1"></div>
+            <div class="qa qa1">
+              <div class="q" id="q1" onclick="revealA('a1', 'qa1');">question <img class="arrow-faq arrow-faq-1" src="arrow-right.png"/> </div>
+              <div class="a" id="a1">answer</div>
+            </div>
+
+            <div class="faq-top-border b2"></div>
+            <div class="qa qa2">
+              <div class="q" id="q2" onclick="revealA('a2', 'qa2');">question <img class="arrow-faq arrow-faq-2" src="arrow-right.png"/></div>
+              <div class="a" id="a2">answer</div>
+            </div>
+
+            <div class="faq-top-border b3"></div>
+            <div class="qa qa3">
+              <div class="q" id="q3" onclick="revealA('a3', 'qa3'); ">question <img class="arrow-faq arrow-faq-3" src="arrow-right.png"/></div>
+              <div class="a" id="a3">answer</div>
+            </div>
+            
+            <div class="faq-top-border b4"></div>
+            <div class="qa qa4">
+              <div class="q" id="q4" onclick="revealA('a4', 'qa4');">question <img class="arrow-faq arrow-faq-4" src="arrow-right.png"/></div>
+              <div class="a" id="a4">answer</div>
+            </div>
+            
+            <div class="faq-top-border b5"></div>
+            <div class="qa qa5">
+              <div class="q" id="q5" onclick="revealA('a5', 'qa5');">question <img class="arrow-faq arrow-faq-5" src="arrow-right.png"/></div>
+              <div class="a" id="a5">answer</div>
+            </div>
+
+            <div class="faq-top-border b6"></div>
+          </div>
+        </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="code.js"></script>
+  </body>
+</html>

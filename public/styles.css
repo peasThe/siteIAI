@@ -1,0 +1,416 @@
+@font-face {
+    font-family: 'Modern Era';
+    src: url('modern-era-medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('league-spartan-regular.ttf') format('truetype');
+}
+
+body {
+    margin:0;
+    overflow-x: hidden;
+    font-family: "Modern Era",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Arial;
+   
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent !important;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: transparent !important; /* Ensure full transparency */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
+
+.menu {
+    position:fixed;
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    width:100vw;
+    height: 10vh;
+    color:white;
+    box-shadow: 3px 3px 20px rgba(47,47,47,.4);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Align items to the right */
+    z-index: 10;
+    transition: background-color 0.3s;
+
+}
+
+.menu.white-bg {
+    background: white;
+    color:#2c2c2c;
+}
+
+
+.items-right {
+    display: flex;
+    margin-left:4vw;
+}
+
+.items-left {
+    display: flex;
+    margin-right:4vw;
+    
+}
+
+#login, #signup {
+    display:inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color:#2c2c2c;
+    margin-right:4vw;
+    border-radius: 100px;
+    box-shadow: 3px 3px 20px rgba(47,47,47,.4);
+}
+
+#login:hover, #signup:hover, #toAppButton:hover {
+    background-color: #2c2c2c;
+    color: white;
+}
+
+#login.bg-color, #signup.bg-color {
+    background-color: #2c2c2c;
+    color: white;
+}
+
+#login.bg-color:hover, #signup.bg-color:hover {
+    background-color: white;
+    color: #2c2c2c;
+}
+
+.menu-item {
+    text-align: center; /* Center text horizontally *//* Vertically center text */
+    list-style: none;
+    font-size: 3vh;
+    margin:1vw;
+    padding-left: 3vw; 
+    padding-right: 3vw;
+    padding-top: 3.1vh;
+    padding-bottom: 3.1vh;/* Add padding to each item */
+    
+}
+
+#home:hover, #about:hover, #faq:hover {
+    cursor: pointer;
+    background-color: rgba(44, 44, 44, 0.1);
+}
+
+#toAppButton {
+    height: 100px;
+    width: 300px;
+    border-radius: 100px;
+    background-color: white;
+    z-index: 100;
+    position:fixed;
+    bottom:40px;
+    right:40px;
+    font-size: 40px;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically center the content */
+    justify-content: center;
+    text-decoration: none;
+    color:#2c2c2c;
+    padding-bottom:5px;
+    margin-bottom:5px;
+    box-shadow: 3px 3px 20px rgba(47,47,47,.4);
+
+}
+
+.screen {
+    position: relative;
+
+    width:100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    
+}
+
+#screen1 {
+    background: radial-gradient(circle, #F27F3D 0%, #F26430 25%, #F2594B 50%, #F26B83 75%, #F2308B 100%);
+}
+
+#screen2 {
+    background: #F9F9F9;
+}
+
+#screen3 {
+    background: #2c2c2c;
+    height: 200vh;
+}
+
+#screen4 {
+    background: #F9F9F9;
+    height: 160vh;
+}
+
+#logo {
+    font-family: "League Spartan",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Arial;
+    position:absolute;
+    color:white;
+    font-size: 15vw;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    -webkit-filter: drop-shadow(3px 3px 20px rgba(47,47,47,.4));
+    filter: drop-shadow(3px 3px 20px rgba(47,47,47,.4));
+}
+
+#motto {
+    position:absolute;
+    color:#2c2c2c;
+    font-size: 5vw;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%) translateY(15vh);
+    -webkit-filter: drop-shadow(3px 3px 20px rgba(47,47,47,.4));
+    filter: drop-shadow(3px 3px 20px rgba(47,47,47,.4));
+}
+
+#text1 {
+    position:absolute;
+    font-size:6vh;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%) translateY(-30vh);
+    
+    text-align: center;
+}
+
+#gradient-bg {
+    background-image: linear-gradient(to right, #F26430 0%,  #F27F3D 25%, #F2594B 50%, #F26B83 75%, #F2308B 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}
+
+#text2 {
+    color:#2c2c2c;
+    position:absolute;
+    font-size:4vh;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%) translateY(-15vh);
+}
+
+#text3 {
+    color:#2c2c2c;
+    position:absolute;
+    font-size:4vh;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%) translateY(-10vh);
+}
+
+
+#img-container {
+    box-shadow: rgba(71, 103, 136, 0.04) 0px 4px 4.5px 0px, rgba(71, 103, 136, 0.03) 0px 8px 15px 0px, rgba(71, 103, 136, 0.06) 0px 15px 30px 0px;
+    border-radius: 12px;
+    border: 1px solid rgb(212, 224, 237);
+    padding:20px;
+}
+
+
+.scroller {
+    overflow: hidden;
+    position: absolute;
+    width: 800px;
+    left:50%; top: 50%;
+    transform: translate(-50%, -50%) translateY(10vh);
+    margin:50px auto;
+    padding: 0;
+    height: 200px;
+    box-shadow: rgba(71, 103, 136, 0.04) 0px 4px 4.5px 0px, rgba(71, 103, 136, 0.03) 0px 8px 15px 0px, rgba(71, 103, 136, 0.06) 0px 15px 30px 0px;
+    border-radius: 12px;
+    border: 1px solid rgb(212, 224, 237);
+    padding:20px;
+}
+
+.animation {
+    position:absolute;
+    display: flex; /* Use flexbox to align images horizontally */
+    width: auto;
+    height: 200px; /* Set a fixed height for the images */
+    overflow: hidden; /* Hide overflow */
+    animation: smoothscroll 20s linear infinite;
+}
+
+.animation div {
+    flex: 0 0 auto; /* Ensure images don't grow or shrink */
+    margin-right: 80px;
+    float: none;
+}
+
+.animation img {
+    height: 100%; /* Set images to fill their parent container */
+    width: auto; /* Maintain aspect ratio */
+}
+
+#info-title {
+    color:white;
+    font-size:6vh;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%) translateY(-80vh);
+    padding-top:100px;
+    height: 25vh;
+    width: 60vw;
+    text-align: center;
+    opacity: 1;
+}
+
+.info-tile {
+    height: 40vh;
+    width: 100vw;
+    position: relative;
+    opacity: 0;
+}
+
+.tile-title {
+    color: white;
+    width: 40vw;
+    font-size: 4vh;
+    top:0;
+    position: absolute;
+    padding-left:250px;
+    padding-right:250px;
+    padding-top:100px;
+}
+
+.tile-content {
+    width: 40vw;
+    color: white;
+    position: absolute;
+    font-size: 3vh;
+    top:8vh;
+    padding-left:250px;
+    padding-right:150px;
+    padding-top:100px;
+}
+
+.tile-type-1 {
+    
+    background-image: linear-gradient(to right, #F26430 0%,  #F27F3D 25%, #F2594B 50%, #F26B83 75%, #F2308B 100%);
+    
+}
+
+.tile-type-1 .tile-title {
+    left:50%;
+    padding-left: 0;
+    
+}
+
+.tile-type-1 .tile-content {
+    left:50%;
+    
+    padding-left: 0;
+}
+
+.tile-img {
+    position: absolute;
+    left: 55%;
+    -webkit-filter: drop-shadow(3px 3px 20px rgba(47,47,47,.4));
+    filter: drop-shadow(3px 3px 20px rgba(156, 156, 156, 0.4));
+}
+
+#tile-img-1 img {
+    height: 40vh;
+}
+
+.tile-type-2 .tile-title {
+    left:0;
+}
+
+.tile-type-2 .tile-content {
+    left:0;
+}
+
+.faq-title {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    font-size: 8vh;
+    color:#2c2c2c;
+    transform: translate(-50%, -50%) translateY(-60vh);
+}
+
+.qa-container {
+    position: relative;
+    width: 80vw;
+    left:10vw;
+    top:35vh;
+    
+}
+
+.qa {
+    position: relative;
+    height: 15vh;
+    padding-left: 70px;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.a {
+    position: relative;
+    font-size:3vh;
+    transform: translateY(-10vh);
+    padding-left:50px;
+    padding-top:50px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+
+.q {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-size:4vh;
+    cursor: pointer;
+    padding: 50px 0;
+}
+
+.faq-top-border {
+    position: relative;
+    border-top: 1px solid #2c2c2c;
+    transition: top 0.5s ease-out;
+   
+}
+
+.reveal-a {
+    opacity: 1;
+}
+
+.arrow-faq img {
+    transform: rotate(90deg);
+}
+
+.arrow-faq {
+    
+    height: 4vh;
+    width: 4vh;
+    margin-right: 70px;
+    transform: rotate(90deg);
+    
+    
+}
