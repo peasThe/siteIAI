@@ -85,6 +85,8 @@ body {
 #login:hover, #signup:hover, #toAppButton:hover {
     background-color: #2c2c2c;
     color: white;
+   
+    
 }
 
 #login.bg-color, #signup.bg-color {
@@ -94,7 +96,8 @@ body {
 
 #login.bg-color:hover, #signup.bg-color:hover {
     background-color: white;
-    color: #2c2c2c;
+    background-image: linear-gradient(to right, #F26430, #F2594B, #F2308B);
+    
 }
 
 .menu-item {
