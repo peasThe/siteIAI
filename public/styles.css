@@ -79,6 +79,7 @@ body {
     margin-right:4vw;
     border-radius: 100px;
     box-shadow: 3px 3px 20px rgba(47,47,47,.4);
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 #login:hover, #signup:hover, #toAppButton:hover {
@@ -131,7 +132,7 @@ body {
     padding-bottom:5px;
     margin-bottom:5px;
     box-shadow: 3px 3px 20px rgba(47,47,47,.4);
-
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .screen {
@@ -356,8 +357,8 @@ body {
 
 .qa-container {
     position: relative;
-    width: 80vw;
-    left:10vw;
+    width: 70vw;
+    left:15vw;
     top:35vh;
     
 }
@@ -392,8 +393,8 @@ body {
 
 .faq-top-border {
     position: relative;
-    border-top: 1px solid #2c2c2c;
-    transition: top 0.5s ease-out;
+    border-top: 2px solid #2c2c2c;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1) ;
    
 }
 
@@ -411,6 +412,52 @@ body {
     width: 4vh;
     margin-right: 70px;
     transform: rotate(90deg);
-    
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1) ;
     
 }
+
+.rotate-img {
+    transform: rotate(270deg);
+}
+
+.gradient-color {
+    border-image: linear-gradient(to right, #F26430, #F27F3D, #F2594B, #F26B83, #F2308B) 1;
+    border-style: solid;
+    width: 100%;
+}
+
+#footer {
+    background: #2c2c2c;
+    width: 100vw;
+    height: 30vh;
+    position: relative;
+    
+}
+
+.nav-container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px;
+}
+
+.text-links a{
+    font-size: 3vh;
+    margin-right: 20px;
+    text-decoration: none; 
+    color:white;
+}
+
+.text-links a:hover,.img-links img:hover{
+    opacity: 0.8;
+}
+
+.img-links img {
+    width: 70px; /* Adjust width as needed */
+    height: 70px; /* Adjust height as needed */
+    margin-right: 10px; /* Optional: Add margin between SVGs */
+    filter: invert(100%); /* Invert colors of SVG */
+}
+
+ 

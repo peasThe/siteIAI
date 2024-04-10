@@ -78,10 +78,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-function revealA(idName, className) {
+function revealA(idName, className, imgname, borderName) {
     const a = document.getElementById(idName);
     const qa = document.querySelector('.' + className);
+    const img = document.querySelector('.' + imgname);
+    const border = document.querySelector('.' + borderName);
     a.classList.toggle('reveal-a');
+    img.classList.toggle('rotate-img');
+    border.classList.toggle('gradient-color');
     let isToggled = a.classList.contains('reveal-a'); // Check if 'reveal-a' class is present
     let totalHeight;
     if(isToggled) {
