@@ -1,3 +1,66 @@
+@font-face {
+    font-family: 'Modern Era';
+    src: url('modern-era-medium.ttf') format('truetype');
+}
 body {
+    font-family: "Modern Era",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Arial;
+}
+a {
+    text-decoration: none; 
+}
+
+.login {
+    position: absolute;
+    width: 90%;
+    top:25%;
+    left:5%;
+    min-height: 200px;
+    color:black;
+    display:flex;
+    flex-direction: column;
+    gap:4rem;
+    font-size: 4rem;
+}
+
+
+.login .text {
+    font-size: 5rem;
+}
+
+
+.login .container {
+    width: auto;
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+
+.container * {
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 15px;
     
+}
+
+.ce1, .ce4 {
+    padding-top:0px;
+    border-bottom: 1px solid grey;
+}
+.ce3, .ce2 {
+    font-size:3rem;
+    color:grey;
+    padding-bottom: 5px;
+}
+
+.text2 {
+    font-size:3rem;
+    color:grey;
+}
+
+.continue {
+    background-color:#fe595e ;
+    color:white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+
 }

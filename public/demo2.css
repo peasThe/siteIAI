@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Modern Era';
+    src: url('modern-era-medium.ttf') format('truetype');
+}
+body {
+    font-family: "Modern Era",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Arial;
+}
+
+
+.nav-bar-bottom {
+    position: fixed;
+    bottom: 0;
+    min-height: 10%;
+    width:100%;
+    display: flex;
+    background-color: white;
+    color:grey;
+    left:0;
+    box-shadow: 3px -3px 20px rgba(47, 47, 47, 0.2);
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.nav-bar-top * {
+    margin:30px;
+    height: 100%;
+    position: relative;
+}
+
+.search {
+    width: 80%;
+    display: flex;
+    border: 1px solid grey;
+    box-shadow: 3px -3px 20px rgba(47, 47, 47, 0.2);
+    border-radius: 60px;
+    gap:2rem;
+    justify-content: flex-start;
+}
+
+
+.search * {
+    margin-left:30px;
+    margin-right:200px;
+    padding:20px;
+}
+
+.search .text {
+    font-size: 4rem;
+}
+
+.search img {
+    width:  50px;
+    margin: auto;
+}
+
+.filter {
+    border: 2px solid rgb(71, 71, 71);
+    border-radius: 60px;
+    margin: auto;
+}
+
+.nav-bar-top {
+    position: fixed;
+    top: 0;
+    min-height: 10%;
+    width:100%;
+    display: flex;
+    background-color: white;
+    color:grey;
+    left:0;
+    box-shadow: 3px -3px 20px rgba(47, 47, 47, 0.2);
+    justify-content: space-between;
+    z-index: 100;
+}
+
+
+.nav-bar-bottom * {
+    margin-left:20px;
+    margin-right: 20px;
+    
+    width:30%;
+    height: auto;
+
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+  .nav-bar-bottom *:focus {
+    outline: none;
+  }
+
+  .nav-bar-bottom *.active {
+    background-color: #ccc;
+  }
+
+.tabcontent {
+    position: absolute;
+    top:15%;
+    width: 70%;
+    left:15%;
+    display: flex;
+    flex-direction: column;
+    gap:7rem;
+}
+
+.item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+.item .description, .item .price, .item .calendar {
+    display: flex;
+    flex-direction: row;
+    font-size: 2.5rem;
+    color:grey;
+}
+
+.item .line1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:4rem;
+    font-size: 3rem;
+    color:black;
+    margin-top:40px;
+    margin-bottom: 40px;
+}
+
+.image {
+    width: 770px;
+    height: 770px;
+    border-radius: 40px;
+    overflow: hidden;
+    
+    background-size: cover;
+    background-position: center;
+}
+
+.image-1 {
+    background-image: url("profile1.jpg") ;
+}
+
+.image-2 {
+    background-image: url("profile2.jpg") ;
+}
+
+.image img {
+    
+    width: 100%;
+    height: auto
+    
+}
